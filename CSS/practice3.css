@@ -1,0 +1,52 @@
+ /* Element Selectors  */
+/* p{
+    color: crimson;
+    background-color:aliceblue;
+} */
+
+/* Id Selectors */
+/* #abc{
+    color: crimson;
+    background-color:aliceblue;
+} */
+
+/* Class Selectors */
+/* .xyz{
+    color: crimson;
+    background-color:aliceblue;
+} */
+
+/* Combination Selectors
+    Element + class  */
+/* p.xyz{
+    color: crimson;
+    background-color:aliceblue;
+} */
+
+/* Child Selectors */
+/* p > a{
+    color: green;
+}
+li > a{
+    color: blue;
+} */
+
+/* Descendant Selectors */
+/* div a{
+    color: green;
+}
+ul a{
+    color: cyan;
+} */
+
+/* Grouping Selectors */
+/* h1, p{
+    color: green;
+    background-color: antiquewhite;
+} */
+
+/* Attribute Selectors */
+input[type="text"]{
+    color:green;
+    background-color: aliceblue;
+}

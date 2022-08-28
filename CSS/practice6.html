@@ -1,0 +1,37 @@
+<!-- 
+    Display Property
+        It is used to specify how an element will align horizontally with respect to other adjacent elements
+        1.display:inline
+            ->an element starts beside the previous element, provided the previous element allows it to sit next to its and there is enough space.
+            ->width and height css properties have no effect
+            ->padding and margin works fine
+        2.display:block
+            ->an element always starts from a new line even if there is enough space next to the previous element
+            ->it takes entire width available
+        3.display:inline-block
+            Elements acquire properties of inline and block elements
+            The elements sit next to each other and take only required space
+            ->width and height css properties works
+
+        4.display:none
+            ->Elements with display value set as none are hidden.
+            ->The element does exist in the HTML, but is visually hidden from the users
+            ->The elemets does not occupy any space as the next element takes its place
+
+ -->    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display</title>
+    <link rel="stylesheet" href="practice6.css">
+</head>
+<body>
+    <div>
+        <h1>Hello World</h1>
+        <a href="#">Lorem ipsum dolor sit amet.</a>
+        <a href="#">Lorem ipsum dolor sit amet.</a>
+        <a href="#">Lorem ipsum dolor sit amet.</a>
+        <a href="#">Lorem ipsum dolor sit amet.</a>
+    </div>
+</body>
+</html>

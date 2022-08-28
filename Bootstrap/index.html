@@ -1,0 +1,95 @@
+<!-- 
+    BOOTSTRAP
+        ->CSS Library with some pre-written CSS code.
+        ->* always link the custom CSS file after linking the pre-written bootstrap file to override any pre-defined property accordingly.
+
+        -Bootstrap has a 12 grid structure
+            col-n(n=1 to 12)
+                this means than the column will occupy n/12 % portion (or n portions from 12) of the complete width of the row.
+            
+                1.col-2 + col-6 + col-4 ->sum of n =12 ie this will occupy complete width of the parent element(class row).
+
+                2.if sum of all the cols(with n) is greater than 12 then the flex-items are wrapped in the next line.
+
+                3.if sum of all the cols(with n) is lesser than 12 then the remaining width stays as it is.
+
+                col-auto
+                    the columm takes only the required width
+                col
+                    the column covers all the remaining width
+
+    -Breakpoints in bootstrap
+
+            Device            |  Range     |   Symbol  |   Breakpoint   
+        Mobile device         |  0-575     |           |      >=0
+        Mobile landscape      |  576-767   |     sm    |      >=576
+            Tablet            |  768-991   |     md    |      >=768
+            Desktop           |  992-1199  |     lg    |      >=992
+        Extra large desktop   |  1200-1399 |     xl    |      >=1200
+    Extra extra large desktop |  1400-     |     xxl   |      >=1400
+
+    -> T he breakpoint is always used in between 'col' and 'n'
+        eg-> col-md-5
+    -> It is used to specify after which point the column will be sized accordingly. 
+    -> The size of the column will be 5/12 for viewport >= 768 pixels.
+    -> Bootstrap follows bottoms-up approach and mobile first approach. 
+
+
+    BOOTSTRAP CLASSES
+
+        ->align-items (can only be added to the flex container i.e row)
+            -it takes three values: start,center and end.
+            -it defines the vertical alignment of the columns inside a row when there is an extra height.
+
+        ->align-self(can only be added to the flex items i.e column)
+             -it takes three values: start,center and end.
+             -it defines the vertical alignment of each column inside a row when there is an extra height.
+             
+        ->justify-content(can only be added to the flex container i.e row)
+            -it takes three values: start,center and end.
+            -it defines the horizontal alignment of the columns inside a row when there is an extra width.
+
+        ->offset
+            It is used to specify some units gap before the column.
+
+ -->
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 ">
+                    1 of 3
+                </div>
+                <div class="col-2 offset-md-2">
+                    2 of 3
+                </div>
+                <div class="col-4">
+                    3 of 3
+                </div>
+                <!-- <div class="col-sm-6 col-lg-4">
+                    1 of 3
+                </div>
+                <div class="col col-md-2 col-lg-4">
+                    2 of 3
+                </div>
+                <div class="col-4 col-sm col-md-4">
+                    3 of 3
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    1 of 2
+                </div>
+                <div class="col-6">
+                    2 of 2
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

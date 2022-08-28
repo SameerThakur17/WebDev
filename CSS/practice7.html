@@ -1,0 +1,72 @@
+<!-- 
+    Position Property
+        It helps us to move HTML elements from their existing positions.
+        
+        It has four values:
+            static,fixed,relative and absolute.
+
+        1.position:static
+            this is the deafult value for HTMl elements
+            elements cannot be moved from their position
+
+        ##Elements with position value anything other than static are called positioned elements#
+
+        2.position:relative
+            it helps move an HTML element with respect to its original position.
+            no other element tries to fit and leaves a gap
+        
+        3.position:fixed
+            It moves the element with respect to the browser window.
+            The position of the element remains fixed even if we scroll the web page.
+            The next element present after the positioned element takes the place of the positioned element leaving no gap.
+        
+        4.position:absolute
+            It moves the element with respect to the nearest positioned ancestor element.
+                i.e the nearest ancestor that has a non-static position value
+            The next element present after the positioned element takes the place of the positioned element leaving no gap.
+        
+        5.z-index
+            It is used to position an element along the z axis.
+            It is used mainly when there are overlapping elements and we want to explicitly put one element over the other.
+            Higher the z-index value of the element the more close it is to us.
+            It works only on positioned elements. 
+
+  -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>POSITION</title>
+    <link rel="stylesheet" href="practice7.css">
+  </head>
+  <body>
+        <div>
+            <!-- <p>Lorem ipsum dolor sit amet.</p>
+            <p id="one">Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p> -->
+
+            <!-- <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p> -->
+
+            <h1>This is a heading.</h1>
+            <p>This is a paragraph.</p>
+        </div>
+  </body>
+  </html>

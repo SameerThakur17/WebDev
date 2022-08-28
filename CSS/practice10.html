@@ -1,0 +1,97 @@
+<!-- 
+    Flexbox
+        It deals with the alignment of the elements inside a parent element.
+        1.Main Axis 
+            The axis or direction in which the flex items are aligned is called main axis
+        2.Cross Axis
+            The axis or the direction perpendicular to the main axis or direction is called cross axis.
+        3.Start and End terminal define the starting and ending point for alignment of the flex items.
+            start and end points could be reversed
+
+    Flex Properties
+        1.display:flex
+            To set the display of an element to flex
+            This property is applied to the parent element or flex container
+        
+        2.flex-direction
+            To specify the flex direction
+            This property is applied to the parent element or flex container
+            flex-direction:x;
+            x -> row(default),column,row-reverse and column-reverse
+
+        3.flex-basis
+            ->It is applied to flex items
+            ->It is used to define the size of the item along the main axis
+                ->The scenario in which flex-direction is row or row-reverse flex basis defines the width of the flex-item
+                ->The scenario in which flex-direction is column or column-reverse flex basis defines the height of the flex-item
+            ->The default value is auto.
+            ->The length value (of flex basis) overrides the width property even if explicitly defined.
+            ->if the flex-basis:auto and width:auto then the value defined in width property is considered
+        
+        4.flex-grow
+            1.It is applicable to flex items
+            2.Only applicable if the container has avialble space after placing all the flex items.
+            3.Its default value is 0
+            4.It causes an item to stretch beyond its specified width in proprtion to other flex items as per their flex-grow values.
+        
+        5.flex-shrink
+            1.It is applicable to flex items
+            2.Only applicable if the container has deficit space.
+            3.Its default value is 1
+            4.It causes an item to shrink beyond its specified width in proprtion to other flex items as per their flex-shrink values.
+
+        6.flex shorthand
+            flex:flex-flow flex-shrink flex-basis;
+            
+        7.flex-wrap
+            ->It is applied to the flex container.
+            ->It is applied only if the container has deficit space.
+            ->It allows the browser to wrap the items together in another line instead of shrinking to fit in the same line.
+            ->It has two values:wrap and nowrap(default)
+            ->The flex shrink property does not affect the flex items if flex-wrap property is set to wrap.
+
+        8.flex-flow
+            It is applied to flex-container.
+            flex-flow:flex-direction flex-wrap;
+        
+        9.justify-content
+            It is applied to the flex container.
+            It is applied only if the container has vailable space.
+            It tells browser how the available space should be distributed along the main-axis,across the items.
+            It works only if none of the flex items are allowed to grow.
+            It has 6 values:flex-start(default), flex-end , center ,space-around, space-between and space evenly.
+
+        10.align-items
+            It is applied to the flex container.
+            It tells the browser how the items should be laid out along the cross axis.
+            It has four values:stretch(default),flex-start ,flex-end and center.
+        
+        11.self-align
+            It is applied to individual flex-items.
+            It has 4 values :stretch(default),flex-start,flex-end and center.
+
+
+
+        
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="practice10.css">
+</head>
+<body>
+    <div class="main">
+        <div class="child1">
+        </div>
+        <div class="child2">
+
+        </div>
+        <div class="child3">
+
+        </div>
+    </div>
+</body>
+</html>

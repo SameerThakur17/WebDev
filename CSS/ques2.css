@@ -1,0 +1,71 @@
+/* CSS Properties */
+/* #div1{
+    background-color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1.one{
+    color: red;
+    font-size: 20px;
+}
+p.one{
+    color: aqua;
+    font-weight: bold;
+}
+#div2{
+    background-color: antiquewhite;
+}
+h1.two{
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+}
+p.two{
+    color: green;
+    font-style: italic;
+    font-weight: bolder;
+    line-height: 100px;
+} */
+
+/* h1,p{
+    text-align: center;
+} */
+/* #div1{
+    background-color: black;
+    color: green;
+    text-align: center;
+}
+#div2{
+    background-color: gold;
+    color: black;
+    text-align: right;
+} */
+/* .one{
+    text-align: center;
+    color: red;
+    background-color: aliceblue;
+}
+.two{
+    text-align: right;
+    color: green;
+    background-color: black;
+} */
+
+/* h1.one{
+    text-align: center;
+    font-style: italic;
+} */
+/* #div1 h1 {
+    text-align: center;
+    font-style: italic;
+} */
+/* #div1 >h1 {
+    text-align: center;
+    font-style: italic;
+} */
+p.one{
+    text-decoration: underline;
+}
+div > h1 {
+    text-align: center;
+    font-style: italic;
+}

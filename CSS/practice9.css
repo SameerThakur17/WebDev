@@ -1,0 +1,99 @@
+/* .main{
+    border: 2px solid red;
+    box-sizing: border-box;
+    font-size: 0px;
+    /* height: 200px; */
+/* } */
+/* .child{
+    display: inline-block;
+    border: 2px solid blue;
+    height: 150px;
+    width: 33.33%;
+    box-sizing: border-box;
+}*/
+
+/* in this even if we dont explicity define the height of the main container it wont collapse as the child value of height is passed to the parent container */
+
+/* *{
+    box-sizing: border-box;
+}
+.main{
+border: 2px solid red;
+/* height: 150px; */
+/* } */
+
+/* Fix to this problem */
+/* .main::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.child{
+    border: 2px solid black;
+    float: left;
+    height: 150px;
+    /* height: 100%; */
+    /* width: 33.33%; */
+/* }  */
+
+/* in this (in case of floating elements) if we dont explicity define the height of the main container it will collapse as the child value of height is not passed to the parent container 
+/* Fix to this problem */
+/* .main::after{
+    content: "";
+    display: block;
+    clear: both;
+} */
+*{
+    box-sizing: border-box;
+}
+.row{
+    height: 150px;
+    border: 2px solid red;
+}
+.col1{
+    height: 100%;
+    width: 33.33%;
+    border: 2px solid black;
+    float: left;
+}
+.col2{
+    height: 100%;
+    width: 50%;
+    float: left;
+    border: 2px solid black;
+}
+.row1{
+    border: 2px solid blue;
+    height: 50%;
+}
+.col3{
+    height: 100%;
+    width: 33.33%;
+    border: 2px solid black;
+    float: left;
+}
+.row2{
+    border: 2px solid blue;
+    height: 50%;
+}
+.col{
+    width: 50%;
+    height: 100%;
+    float: left;
+    border: 2px solid blue;
+}
+.row3{
+    height: 33.33%;
+    border: 2px solid blue;
+}
+.col4{
+    height: 100%;
+    width: 50%;
+    border: 2px solid black;
+    float: left;
+}
+.row4{
+    height: 50%;
+    border: 2px solid blue;
+}

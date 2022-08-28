@@ -1,0 +1,26 @@
+<!--
+    Precedence in Styling
+    1.The browser renders the HTML document from top to bottom and element by element.
+    2.The styling i.e internal style tag and external css whichever is mentioned first in the HTML code gets applied first and then the second styling.
+    3.Inline styling gets applied at the end and overrides the other stylings. 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Precedence in Styling</title>
+    <link rel="stylesheet" href="./practice2.css">
+    <style>
+        p{
+            color: white;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p style="color:cyan;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, vero!</p>
+</body>
+</html>

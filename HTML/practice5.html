@@ -1,0 +1,54 @@
+<!-- 
+    Tables
+    1.table is created using <table> tag
+    2.<tr> tag is used to create rows in the table  
+    3.<td> tag is used to add data into the table   
+    4.Table header <th>=<td><b>content</b></td>
+    5.border attribue of the table tag is used to set the width of table in pixels around the table and around each cell
+    6.cellspacing attribute of the table is used to specify the space between two cells verically and horizontally in pixels
+    7.cellpadding attribute of the table is used to specify the space between the cell wall and the cell content in pixels
+    8.height and width of the table attributes are used specify the width and height of the table
+    9.colspan attribute of the <td> tag is used to span more than one column
+    10.rowspan attribute of the <td> tag is used to span more than one row
+
+    <table> tag is block element
+    <td>,<tr> and <th> are inline elements
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tables</title>
+</head>
+<body>
+    <table border="2" cellspacing="0" cellpadding="5" height="200px" width="400px">
+        <caption>My Table</caption>
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Roll No</th>
+            <th>Title</th>
+        </tr>
+        <tr>
+            <td>Sameer</td>
+            <td>12</td>
+            <td>1</td>
+            <td rowspan="4">ChampInDeed</td>
+        </tr>
+        <tr>
+            <td>Rahul</td>
+            <td>12</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Abhinandan</td>
+            <td>12</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td colspan="3">Champ In Deed</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* .main{
+    display: flex;
+    width: 800px;
+    border: 2px dotted blue;
+    flex-direction: column-reverse;
+}
+.child{
+    height: 100px;
+    width: 200px;
+    border: 2px solid red;
+    margin: 10px;
+    text-align: center;
+} */
+
+/* .main{
+    display: flex;
+    width: 500px;
+    border: 2px solid red;
+}
+.main > div{
+    width: 200px;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+.child1{
+    flex-basis: 50px;
+    /* width property is overriden */
+/* } */
+/* .two{ */
+/* flex-basis: auto; */
+/*width property is considered here */
+/* } */
+/* .three{ */
+/* flex-basis: 200px; */
+/* width property is overriden */
+/* } */
+/* *{
+    box-sizing: border-box;
+}
+.main {
+    display: flex;
+    border: 2px solid red;
+    width: 500px;
+}
+
+.main>div {
+    border: 2px solid blue;
+}
+
+.child1 {
+    flex-basis: 100px;
+    flex-grow: 0;
+}
+
+.child2 {
+    flex-basis: 100px;
+    flex-grow: 0;
+}
+
+.child3 {
+    flex-basis: 100px;
+    flex-grow: 1;
+} */
+ 
+/* *{
+    box-sizing: border-box;
+}
+.main {
+    display: flex;
+    border: 2px solid red;
+    width: 500px;
+    /* flex-wrap: wrap; */
+    /* flex-flow: row-reverse wrap; */
+    /* justify-content: space-evenly; */
+/* } */
+/* 
+.main>div {
+    border: 2px solid blue;
+} */
+
+/* .child1 {
+    width: 100px;
+    /* flex-shrink: 1; */
+    /* flex: 0 0 200px; */
+/* }  */
+/* 
+.child2 {
+    width: 100px;
+    /* flex-shrink: 1; */
+    /* flex: 0 1 200px; */
+/* }  */
+
+/* .child3 {
+    width: 100px;
+    /* flex-shrink: 2; */
+    /* flex: 0 1 200px; */
+/* }  */
+
+.main{
+    display: flex;
+    width: 500px;
+    height: 300px;
+    border: 2px solid red;
+    /* align-items: center; */
+}
+.main > div{
+    border: 2px solid blue;
+    width: 100px;
+}
+.child1{
+    align-self: flex-end;
+}
+.child3{
+    align-self: flex-start;
+}

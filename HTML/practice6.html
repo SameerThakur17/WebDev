@@ -1,0 +1,66 @@
+<!-- 
+    Forms
+    1.<form> tag is used to create forms on a webpage
+
+    2.input fields are created using the <input> tag 
+        ->type attribute of the input attribute specifies the type of value it would take.
+        ->type attribute can be of the following types
+            text,password,radio,checkbox and submit
+        ->name attribute is used to give a name to the input element
+        ->the name attribute is used to reference elements in JS or to reference form data  after a form is submitted
+
+    3.<select> tag is used to create a dropdown list
+        <option> tag is used to create selection values
+
+    4.<textarea> tag is used to create textarea on a webpage
+        it contains rows and column attributes which specify its height and width
+
+    5.submit button is created using attribute type ="submit" in the <input> tag
+
+    6.The value attribute specifies the value of an <input> element.
+
+      The value attribute is used differently for different input types:
+      
+      1.For "button", "reset", and "submit" - it defines the text on the button
+      2.For "text", "password", and "hidden" - it defines the initial (default) value of the input field
+      3.For "checkbox", "radio", "image" - it defines the value associated with the input (this is also the value that is sent on submit)
+    
+    7.<form> is a block element
+      <input>,<select> and <textarea> are inline elments 
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <form>
+            <input type="text" name="username" >
+            <input type="password" name="password">
+            <br>
+        
+            <input type="radio" name="gender" value="Male">MALE
+            <input type="radio" name="gender" value="Female">FEMALE
+            <input type="radio" name="gender" value="Other">OTHER
+            <br>
+
+            <input type="checkbox" name="interest" value="Reading">READING
+            <input type="checkbox" name="interest" value="Cricket">CRICKET
+            <input type="checkbox" name="interest" value="Football">FOOTBALL
+            <br>
+            <select name="city">
+                <option value="India">INDIA</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+            </select>
+            <br>
+
+            <textarea name="textarea" cols="30" rows="10">Write Your Address</textarea>
+            <br>
+        
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+<!-- 
+    #Force Reload A Webpage
+        CTRL+Shift+R
+
+    #Universal Attributes
+        The attributes that can be used with any element
+        For example id,class,style etc.
+
+    #CSS Selectors
+        1.Element/Type selectors
+            They are used to style all the elements of a particular type at once.
+
+            Syntax:
+            element_name{
+                property:value;
+            }
+
+        2.Id Selectors(#)
+            They are used to style only a single element of a particular type.
+            Naming Conventions for unique id
+                1.It can have alphanumeric characters or hyphen or underscore
+                2.It cannot have any special characters
+                3.The name cannot start with a number
+
+                Syntax:
+                #id_name{
+                    property:value;
+                }
+
+        3.Class Selectors(.)
+            They are used when we want to style more than one element.
+            Class element helps to group elements irrespective of their type 
+                for eg. class can be used to style h1 and p tag
+
+                Syntax:
+                .class_name{
+                    property:value;
+                }
+
+        4.Combination Selectors
+            1.Element + class selector 
+              Syntax:
+              element_name.class_name{
+                    property:value;
+               }
+        5.Child Selectors
+            We use the concept of parent-child hierarchy to select an HTMl element
+                child elements are directly placed inside the parent elements
+            Syntax:
+            parent_element > child_element{
+                property:value;
+            }
+        
+        6.Descendant Selectors
+            We use the comcept of descendants to select the HTMl elements.
+                descendant elements are indirectly placed under the anestors and directly inside parent elements.
+            Syntax:
+            ancestor_element descendant element{
+                property:value;
+            }
+
+        7.Grouping Selectors
+            They help us to apply the same style to multiple sections of elements
+            Syntax:
+            element1 , element2 {
+                property:value;
+            }
+
+        8.Attribute Selectors
+            Used to select the elements according to their type value
+            input[type="value"]{
+                property:value;
+            }
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Selectors</title>
+    <link rel="stylesheet" href="practice3.css">
+</head>
+<body>
+
+    <!-- Element Selectors -->
+    <!-- <p>Hello World</p>
+    <p>Hi There</p>
+    <p>Champ in deed</p>
+    <p>Lunatic</p> -->
+
+    <!-- Id Selectors -->
+    <!-- <p>Hello World</p>
+    <p id="abc">Hi There</p>
+    <p>Champ in deed</p>
+    <p>Lunatic</p> -->
+
+    <!-- Class Selectors -->
+    <!-- <h1 class="xyz">Hello World</h1>
+    <p class="xyz">Hi There</p>
+    <p>Champ in deed</p>
+    <p class="xyz">Lunatic</p> -->
+
+    <!-- Combination Selectors -->
+    <!-- Element + class -->
+    <!-- <h1 class="xyz">Hello World</h1>
+    <p class="xyz">Hi There</p>
+    <p>Champ in deed</p>
+    <p class="xyz">Lunatic</p> -->
+
+    <!-- Child Selectors -->
+    <!-- <div>
+        <ul>
+            <li>
+                <a href="http://www.google.com" target="_blank">Google</a>
+            </li>
+            <li>
+                <a href="http://www.facebook.com" target="_blank">Facebook</a>
+            </li>
+        </ul>       
+    </div>
+    <div>
+        <p>
+            <a href="http://www.internshala.com" target="_blank">Intershala</a>
+        </p>
+    </div> -->
+
+    <!-- Grouping Selectors -->
+    <!-- <h1>Hello World</h1>
+    <p>Hi There</p>
+    <p>Champ in deed</p>
+    <p>Lunatic</p> -->
+
+    <!-- Attribute Selectors -->
+    <form>
+        First Name <br>
+       <input type="text" name="fname"> <br>
+        Last Name <br>
+       <input type="text" name="lname"> <br>
+        Password <br>
+       <input type="password"  name="password"> <br>
+       <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

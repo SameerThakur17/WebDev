@@ -1,0 +1,145 @@
+<!-- 
+    Box Model
+    1.Border Properties
+        1.border-style
+            it is used to specify a style to the border of an element
+        2.border-width
+            it is used to specify width to the border of an element
+                the default value is 3 pixels.
+                does not work if the border-style value is none
+        3.border-color
+            it is used to specify a color to the border of an element
+                the default value is black.
+                does not work if the border-style value is none
+        4.border
+            Shorthand
+            border:border-width border-style border-color;
+        Border Sub-properties
+            border-top border-right border-bottom border-left
+
+    2.Padding Properties
+        Padding is space around the content of an element inside its border
+        default value is 0px
+        
+        Syntax    
+            padding:10px;
+                padding-top=padding-right=padding-bottom=padding-left=10px
+        
+            padding:10px 40px 20px 5px;
+                padding-top=10px
+                padding-right=40px
+                padding-bottom=20px
+                padding-left=5px
+
+            padding:10px 40px 20px;
+                padding-top=10px
+                padding-right=40px
+                padding-bottom=20px
+                padding-left=padding-right=40px
+
+            padding:10px 40px;
+                padding-top=10px
+                padding-right=40px
+                padding-bottom=padding-top=10px
+                padding-left=padding-right=40px
+
+        Padding Sub-properties
+            padding-top padding-right padding-bottom padding-left
+    
+    3.Margin Properties
+        It is the space around the element outside its border and is added to maintain space between adjacent elements
+        Syntax    
+            margin:10px;
+                margin-top=margin-right=margin-bottom=margin-left=10px
+        
+            margin:10px 40px 20px 5px;
+                margin-top=10px
+                margin-right=40px
+                margin-bottom=20px
+                margin-left=5px
+
+            margin:10px 40px 20px;
+                margin-top=10px
+                margin-right=40px
+                margin-bottom=20px
+                margin-left=padding-right=40px
+
+            margin:10px 40px;
+                margin-top=10px
+                margin-right=40px
+                margin-bottom=padding-top=10px
+                margin-left=padding-right=40px
+
+        Padding Sub-properties
+        margin-top margin-right margin-bottom margin-left
+
+    4.Height and Width properties
+        value=auto
+            means minimal space needed to fit the content
+        default value of height is auto
+        default value of width is different for different elements 
+        
+        #Actual height and width > defined height and width
+         1.Actual height occupied =
+         border-top+padding-top+defined-height+padding-bottom+border-bottom
+
+         2.Actual width occupied =
+         border-left+padding-left+defined-width+padding-right+border-right
+
+    5.box-sizing property
+        it is used to define height and width either in the content box or the border box
+            values can be border-box or content-box(default)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Box Model</title>
+    <link rel="stylesheet" href="practice5.css">
+</head>
+<body>
+
+    <!-- Border Properties -->
+
+        <!-- <div>
+            <h1 class="one">Border Properties</h1>
+            <p class="one">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laboriosam. Voluptates animi officia quis doloremque, inventore aut nostrum blanditiis consequatur!</p>
+        </div>
+        <div>
+            <h1>Border Sub Properties</h1>
+                <p id="p1">Lorem ipsum dolor sit amet.</p>
+                <p id="p2">Lorem ipsum dolor sit amet.</p>
+                <p id="p3">Lorem ipsum dolor sit amet.</p>
+                <p id="p4">Lorem ipsum dolor sit amet.</p>
+        </div> -->
+      
+    <!-- Padding Properties -->
+
+        <!-- <div>
+            <h1 class="one">Padding Properties</h1>
+            <p class="one">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, laboriosam. Voluptates animi officia quis doloremque, inventore aut nostrum blanditiis consequatur!</p>
+        </div>
+        <div>
+            <h1>Padding Sub Properties</h1>
+                <p id="p1">Lorem ipsum dolor sit amet.</p>
+                <p id="p2">Lorem ipsum dolor sit amet.</p>
+                <p id="p3">Lorem ipsum dolor sit amet.</p>
+                <p id="p4">Lorem ipsum dolor sit amet.</p>
+        </div> -->
+    
+        <!-- Margin Properties -->
+
+        <div id="one">
+            <h1>Division 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, libero.</p>
+        </div>
+        <div id="two">
+            <h1>Division 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, libero.</p>
+        </div>
+        <div id="three">
+            <h1>Division 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, libero.</p>
+        </div>
+</body>
+</body>
+</html>
